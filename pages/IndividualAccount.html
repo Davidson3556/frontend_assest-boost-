@@ -1,107 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SwapMoney</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
-   
+
 </head>
+
 <body>
     <div id="home" class="w-60 h-100">
-        <div class= "d-flex flex-column align-items-center h-100 gap-3">
-          <div class= "d-flex flex-column gap-4">
-<div class="theme-toggle position-fixed top-0 end-0 m-3">
-<button id="themeToggle" class="btn btn-sm btn-outline-secondary">
-🌓
-</button>
-</div>
-            <div></div>
-            <div></div>
-            <div></div>
-            
-             <p class="fs-3 fw-bold text-header fade-in" id="head">Create your Individual account</p>
-             <p class="second-headingp2" id="sub-head">Let's get started on setting up your personal SwapMoney account.<p/>
-             <div class = "d-flex flex-column gap-4">
-               
-                  <div class="d-flex gap-2 align-items-stretch">
-                    <div class="dropdown">
-                        <button class="btn dropdown-toggle country-selector bg-card rounded-4 d-flex align-items-center gap-2" 
-                                type="button" 
-                                data-bs-toggle="dropdown"
-                                style="min-width: 120px; height: 61px;">
-                            <span class="flag-emoji">GB</span>
-                            <span class="country-code ">+44</span>
-                        </button>
-                        <ul class="dropdown-menu country-list" style="max-height: 300px; overflow-y: auto;">
-                            
-                        </ul>
-                    </div>
-                    <input type="tel" 
-                           class="form-control border-0 rounded-4 bg-card fs-6 px-3 input-box" 
-                           id="phone-number" 
-                           placeholder="Phone Number"
-                           pattern="[0-9]*"
-                           inputmode="numeric">
+        <div class="d-flex flex-column align-items-center h-100 gap-3">
+            <div class="d-flex flex-column gap-4">
+                <div class="theme-toggle position-fixed top-0 end-0 m-3">
+                    <button id="themeToggle" class="btn btn-sm btn-outline-secondary">
+                        🌓
+                    </button>
                 </div>
-                <div class="position-relative">
-                  <input type="email" 
-                         class="form-control border-0 rounded-4 bg-card fs-6 px-3 input-box" 
-                         id="email" 
-                         placeholder="Email Address"
-                         required>
-                  <div class="invalid-feedback" id="email-error"></div>
-              </div>
-          
-              <!-- First Name Input -->
-              <div class="position-relative">
-                  <input type="text" 
-                         class="form-control border-0 rounded-4 bg-card fs-6 px-3 input-box" 
-                         id="first-name" 
-                         placeholder="First Name"
-                         required>
-                  <div class="invalid-feedback" id="name-error"></div>
-              </div>
-          
-              <!-- Next Button -->
-              <div class="btn btn-primary rounded-4 d-flex justify-content-center align-items-center text-white fw-bold w-100 bg-next-btn next-btn fade-in"
-                   id="nextButton">
-                  <p>Next</p>
-              </div>
-                  
-             </div>
-            
-        
-           
-        
-         
-          </div>
+                <div></div>
+                <div></div>
+                <div></div>
 
-    </div>
+                <p class="fs-3 fw-bold text-header fade-in" id="head">Create your Individual account</p>
+                <p class="second-headingp2" id="sub-head">Let's get started on setting up your personal SwapMoney
+                    account.
+                    <p />
+                <div class="d-flex flex-column gap-4">
+
+                    <div class="d-flex gap-2 align-items-stretch">
+                        <div class="dropdown">
+                            <button
+                                class="btn dropdown-toggle country-selector bg-card rounded-4 d-flex align-items-center gap-2"
+                                type="button" data-bs-toggle="dropdown" style="min-width: 120px; height: 61px;">
+                                <span class="flag-emoji">GB</span>
+                                <span class="country-code ">+44</span>
+                            </button>
+                            <ul class="dropdown-menu country-list" style="max-height: 300px; overflow-y: auto;">
+
+                            </ul>
+                        </div>
+                        <input type="tel" class="form-control border-0 rounded-4 bg-card fs-6 px-3 input-box"
+                            id="phone-number" placeholder="Phone Number" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                    <div class="position-relative">
+                        <input type="email" class="form-control border-0 rounded-4 bg-card fs-6 px-3 input-box"
+                            id="email" placeholder="Email Address" required>
+                        <div class="invalid-feedback" id="email-error"></div>
+                    </div>
+
+                    <!-- First Name Input -->
+                    <div class="position-relative">
+                        <input type="text" class="form-control border-0 rounded-4 bg-card fs-6 px-3 input-box"
+                            id="first-name" placeholder="First Name" required>
+                        <div class="invalid-feedback" id="name-error"></div>
+                    </div>
+
+                    <!-- Next Button -->
+                    <div class="btn btn-primary rounded-4 d-flex justify-content-center align-items-center text-white fw-bold w-100 bg-next-btn next-btn fade-in"
+                        id="nextButton">
+                        <p>Next</p>
+                    </div>
+
+                </div>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script2.js"></script>
+
+
+            </div>
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script2.js"></script>
 
 
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
