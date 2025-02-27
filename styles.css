@@ -1,0 +1,379 @@
+:root {
+  /* Light theme (existing) */
+  --Background: #FFFFFF;
+  --Header: #3C3B6E;
+  --Second-header-text: #1F201D;
+  --p3-text: #1F201D;
+  --Containers: #F4F4F4;
+  --NextBtn: #3C3B6E;
+}
+
+[data-theme="dark"] {
+  /* Dark theme */
+  --Background: #12152B;
+  --Header: #ADACFF;
+  --Second-header-text: #F1F1F1;
+  --p3-text: #F1F1F1;
+  --Containers: #2d2d2d;
+
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--Background);
+    color: var(Second-header-text);
+    height: 100vh;
+    overflow-x: hidden;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+    .text-header {
+  color: var(--Header);
+  font-family: "Cera Pro Bold";
+  }
+
+
+  .bg-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #F4F4F4;
+  }
+  
+  .bg-card:hover {
+    background-color: #e8e8e8 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 162, 255, 0.6), 0 0 30px rgba(0, 162, 255, 0.4);
+}
+.bg-card2 {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: #F4F4F4;
+}
+
+.bg-card2:hover {
+  background-color: #ffe8cc !important; /* Soft peach-orange */
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(255, 136, 0, 0.6), 0 0 30px rgba(255, 102, 0, 0.4); /* Warm orange glow */
+}
+
+
+/* Update card hover effects for dark mode */
+[data-theme="dark"] .bg-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: var(--p3-text);
+
+  background-color: #3C3B6E59;
+}
+[data-theme="dark"] .bg-card2 {
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  background-color: #3C3B6E59;
+}
+
+
+[data-theme="dark"] .bg-card:hover {
+  background-color: #12152B !important;
+  box-shadow: 0 0 20px rgba(108, 122, 224, 0.8), 0 0 40px rgba(108, 122, 224, 0.5);
+  transform: scale(1.05);
+}
+
+
+[data-theme="dark"] .bg-card2:hover {
+  background-color: #423a2d !important;
+  box-shadow: 0 0 20px rgba(224, 154, 108, 0.8), 0 0 40px rgba(224, 122, 108, 0.5);
+  transform: scale(1.05);
+}
+  
+
+/* Confirmation Page Styles */
+.toast {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.user-details-card {
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .user-details-card {
+  border-color: rgba(255,255,255,0.1);
+}
+
+.detail-item {
+  padding: 1rem;
+  background-color: var(--Containers);
+  border-radius: 0.5rem;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+  /* Make sure anchor tags fill their containers */
+  a.fade-trigger {
+    display: block;
+    width: 100%;
+  }
+
+  .w-55 {
+  width: 55% !important;
+  }
+
+  @media (max-width: 630px) {
+    .w-60 {
+        width: 95% !important;
+    }
+}
+.second-heading { 
+    font-size: 18px; 
+    color: var(--Second-header-text);
+    line-height: 25px;
+    font-family: "Cera Pro Medium";
+}
+
+
+
+  .p3{
+    color: var(--p3-text);
+    font-size: 14px;
+    font-family: "Cera Pro Thin";
+  }
+
+  .second-headingp2{
+    color: var(--Second-header-text);
+    font-size: 16px;
+    font-family: "Cera Pro Thin";
+  }
+
+
+
+  .IndividualIcon{
+    min-width: 66px;
+    min-height: 66px;
+    background-image: url('/icon/profile.svg'); 
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .BusinessIcon{
+    min-width: 66px;
+    min-height: 66px;
+    background-image: url('/icon/business.svg'); 
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+
+  .input-box{
+    height: 61px;
+    width: 100%;
+    font-family: "Cera Pro Thin";
+    
+  }
+ 
+  [data-theme="dark"]  .input-box{
+    height: 61px;
+    width: 100%;
+    font-family: "Cera Pro Thin";
+    color: var(--p3-text);
+
+    
+  }
+
+  .next-btn{
+    height: 62px;
+  }
+.bg-next-btn{
+    background-color: var(--NextBtn);
+}
+
+/* Password Page Specific Styles */
+.user-info-box {
+  background-color: var(--Containers);
+  border: 1px solid rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.password-requirements {
+  background-color: var(--Containers);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.password-requirements li {
+  color: var(--p3-text);
+  transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .user-info-box,
+[data-theme="dark"] .password-requirements {
+  border-color: rgba(255,255,255,0.1);
+}
+/* Add to styles.css */
+.is-invalid {
+  border: 1px solid #dc3545 !important;
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 0.875em;
+  margin-top: 0.25rem;
+  position: absolute;
+  bottom: -20px;
+  left: 12px;
+}
+
+[data-theme="dark"] .is-invalid {
+  border-color: #ff4444 !important;
+}
+
+[data-theme="dark"] .invalid-feedback {
+  color: #ff6666;
+}
+
+.password-requirements {
+  background-color: var(--Containers);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.password-requirements li {
+  color: var(--p3-text);
+  transition: color 0.3s ease;
+}
+
+[data-theme="dark"] .password-requirements {
+  border-color: rgba(255,255,255,0.1);
+}
+
+.is-invalid {
+  border: 1px solid #dc3545 !important;
+}
+
+
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 0.9s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-in-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeInScaleAnimation 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInScaleAnimation {
+  from {
+      opacity: 0;
+      transform: scale(0.95);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInLeftAnimation 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeInLeftAnimation {
+  from {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(20px);
+  animation: fadeInRightAnimation 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeInRightAnimation {
+  from {
+      opacity: 0;
+      transform: translateX(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+
+
+  @font-face {
+    font-family: 'Cera Pro Bold';
+    src: url('/font/cerapro-bold.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Cera Pro';
+    src: url('/font/cerapro-regular.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Cera Pro Medium';
+    src: url('/font/cerapro-medium.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Cera Pro Light';
+    src: url('/font/cerapro-light.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Cera Pro Thin';
+    src: url('/font/cerapro-thin.otf') format('opentype');
+  }
+  
